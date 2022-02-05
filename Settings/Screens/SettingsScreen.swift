@@ -12,8 +12,6 @@ class SettingsScreen: UIViewController {
     
     @IBOutlet weak var settingsTableView: UITableView!
     
-    let signIn = ["Sign in to your iphone"]
-    
     let general = ["General", "Accessibility", "Privacy"]
     
     let accounts = ["Passwords & Accounts"]
@@ -40,7 +38,7 @@ extension SettingsScreen: UITableViewDelegate, UITableViewDataSource{
         
         switch section {
         case 0:
-            return signIn.count
+            return 1
         case 1:
             return general.count
         case 2:
@@ -85,7 +83,7 @@ extension SettingsScreen: UITableViewDelegate, UITableViewDataSource{
         
         switch indexPath.section {
         case 0:
-            print (signIn[indexPath.row])
+            print ("show sign in screen")
         case 1:
             
             switch indexPath.row {
@@ -127,16 +125,7 @@ extension SettingsScreen: UITableViewDelegate, UITableViewDataSource{
         default:
             print ("Invalid")
         }
-    
-//
-//        if indexPath.section == 1 && indexPath.row == 0 {
-//
-//            if let vc = storyboard?.instantiateViewController(identifier: "GeneralScreen") as? GeneralScreen{
-//                navigationController?.pushViewController(vc, animated: true)
-//
-//            }
-//        }
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
 }

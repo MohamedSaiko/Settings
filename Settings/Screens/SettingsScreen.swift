@@ -83,7 +83,7 @@ extension SettingsScreen: UITableViewDelegate, UITableViewDataSource{
         
         switch indexPath.section {
         case 0:
-            print ("show sign in screen")
+            print ("Show sign in screen")
         case 1:
             
             switch indexPath.row {

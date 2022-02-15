@@ -13,6 +13,8 @@
 		410C580B27AB1A9300B179EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410C580927AB1A9300B179EE /* LaunchScreen.storyboard */; };
 		410C581627AB1C9000B179EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410C581427AB1C9000B179EE /* Main.storyboard */; };
 		410C581827AB1CEB00B179EE /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410C581727AB1CEB00B179EE /* SettingsScreen.swift */; };
+		413DF69B27BBA1040029F37F /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413DF69A27BBA1040029F37F /* AboutScreen.swift */; };
+		413DF69D27BBADEE0029F37F /* AboutInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413DF69C27BBADEE0029F37F /* AboutInfoCell.swift */; };
 		4176FE5027ACFDA20023A833 /* GeneralScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4176FE4F27ACFDA20023A833 /* GeneralScreen.swift */; };
 		4179674527AD43F700935381 /* SignInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179674427AD43F700935381 /* SignInCell.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +28,8 @@
 		410C580C27AB1A9300B179EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		410C581527AB1C9000B179EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		410C581727AB1CEB00B179EE /* SettingsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		413DF69A27BBA1040029F37F /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
+		413DF69C27BBADEE0029F37F /* AboutInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutInfoCell.swift; sourceTree = "<group>"; };
 		4176FE4F27ACFDA20023A833 /* GeneralScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralScreen.swift; sourceTree = "<group>"; };
 		4179674427AD43F700935381 /* SignInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +81,7 @@
 			children = (
 				410C581727AB1CEB00B179EE /* SettingsScreen.swift */,
 				4176FE4F27ACFDA20023A833 /* GeneralScreen.swift */,
+				413DF69A27BBA1040029F37F /* AboutScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				4179674427AD43F700935381 /* SignInCell.swift */,
+				413DF69C27BBADEE0029F37F /* AboutInfoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -164,7 +170,9 @@
 				410C581827AB1CEB00B179EE /* SettingsScreen.swift in Sources */,
 				410C57FF27AB1A9200B179EE /* AppDelegate.swift in Sources */,
 				410C580127AB1A9200B179EE /* SceneDelegate.swift in Sources */,
+				413DF69D27BBADEE0029F37F /* AboutInfoCell.swift in Sources */,
 				4176FE5027ACFDA20023A833 /* GeneralScreen.swift in Sources */,
+				413DF69B27BBA1040029F37F /* AboutScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

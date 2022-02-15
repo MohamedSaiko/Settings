@@ -14,4 +14,13 @@ class SignInCell: UITableViewCell {
     @IBOutlet weak var signInLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
     
+    func configure() {
+        signInLabel.text = "Sign in to your iPhone"
+        infoLabel.text = "Set up iCloud, the App store, and more. "
+        signInImage.image = UIImage(named: "saiko_img")
+        signInImage.layer.cornerRadius = signInImage.frame.height / 2
+        signInImage.layer.borderWidth = 0.5
+        signInImage.layer.borderColor = UIColor.lightGray.cgColor
+    }
+    
 }

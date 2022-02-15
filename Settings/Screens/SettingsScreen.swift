@@ -21,9 +21,9 @@ class SettingsScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.prefersLargeTitles = true
         settingsTableView.delegate = self
         settingsTableView.dataSource = self
+        navigationController?.navigationBar.prefersLargeTitles = true
         
     }
 }
@@ -58,12 +58,7 @@ extension SettingsScreen: UITableViewDelegate, UITableViewDataSource{
 
         switch indexPath.section {
         case 0:
-            signInCell.signInLabel.text = "Sign in to your iPhone"
-            signInCell.infoLabel.text = "Set up iCloud, the App store, and more. "
-            signInCell.signInImage.image = UIImage(named: "saiko_img")
-            signInCell.signInImage.layer.cornerRadius = signInCell.signInImage.frame.height / 2
-            signInCell.signInImage.layer.borderWidth = 0.5
-            signInCell.signInImage.layer.borderColor = UIColor.lightGray.cgColor
+            signInCell.configure()
         case 1:
             settingsCell.textLabel?.text = general[indexPath.row]
         case 2:

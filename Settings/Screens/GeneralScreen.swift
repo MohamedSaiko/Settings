@@ -22,7 +22,7 @@ class GeneralScreen: UIViewController {
         super.viewDidLoad()
         generalTableView.delegate = self
         generalTableView.dataSource = self
-        
+        navigationItem.largeTitleDisplayMode = .never
     }
 }
 
@@ -64,4 +64,32 @@ extension GeneralScreen: UITableViewDelegate, UITableViewDataSource {
         return generalCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.section {
+        case 0:
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "AboutScreen") as? AboutScreen{
+                navigationController?.pushViewController(vc, animated: true)
+            }
+        case 1:
+            switch indexPath.row {
+            case 0:
+                print (keyboard[0])
+            case 1:
+                print (keyboard[1])
+            case 2:
+                print (keyboard[2])
+            case 3:
+                print (keyboard[3])
+            default:
+                print ("Invalid")
+            }
+        case 2:
+            print (reset[indexPath.row])
+        default:
+            print ("Invalid")
+        }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }

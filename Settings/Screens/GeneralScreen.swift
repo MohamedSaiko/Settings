@@ -74,20 +74,20 @@ extension GeneralScreen: UITableViewDelegate, UITableViewDataSource {
         case 1:
             switch indexPath.row {
             case 0:
-                print (keyboard[0])
+                print (keyboard[indexPath.row])
             case 1:
-                print (keyboard[1])
+                print (keyboard[indexPath.row])
             case 2:
-                print (keyboard[2])
+                print (keyboard[indexPath.row])
             case 3:
-                print (keyboard[3])
+                print (keyboard[indexPath.row])
             default:
-                print ("Invalid")
+                print ("invalid")
             }
         case 2:
             print (reset[indexPath.row])
         default:
-            print ("Invalid")
+            print ("invalid")
         }
         
         tableView.deselectRow(at: indexPath, animated: true)

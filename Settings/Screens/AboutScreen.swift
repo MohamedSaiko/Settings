@@ -48,15 +48,17 @@ extension AboutScreen: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let aboutInfoCell = tableView.dequeueReusableCell(withIdentifier: "aboutInfoCell", for: indexPath)
+        let aboutInfoCell = tableView.dequeueReusableCell(withIdentifier: "aboutInfoCell", for: indexPath) as! AboutInfoCell
 
         let certificateCell = tableView.dequeueReusableCell(withIdentifier: "certificateCell", for: indexPath)
 
         switch indexPath.section {
         case 0:
             aboutInfoCell.textLabel?.text = info[indexPath.row]
+            aboutInfoCell.configure(at: indexPath)
         case 1:
             aboutInfoCell.textLabel?.text = storageItems[indexPath.row]
+            aboutInfoCell.configure(at: indexPath)
         case 2:
             certificateCell.textLabel?.text = certificate[indexPath.row]
         default:
@@ -68,5 +70,20 @@ extension AboutScreen: UITableViewDelegate, UITableViewDataSource {
         }else{
             return aboutInfoCell
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.section {
+        case 0:
+            print("")
+        case 1:
+            print("")
+        case 2:
+            print (certificate[indexPath.row])
+        default:
+            print ("Invalid")
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

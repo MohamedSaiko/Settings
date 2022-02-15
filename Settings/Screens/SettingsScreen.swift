@@ -62,6 +62,8 @@ extension SettingsScreen: UITableViewDelegate, UITableViewDataSource{
             signInCell.infoLabel.text = "Set up iCloud, the App store, and more. "
             signInCell.signInImage.image = UIImage(named: "saiko_img")
             signInCell.signInImage.layer.cornerRadius = signInCell.signInImage.frame.height / 2
+            signInCell.signInImage.layer.borderWidth = 0.5
+            signInCell.signInImage.layer.borderColor = UIColor.lightGray.cgColor
         case 1:
             settingsCell.textLabel?.text = general[indexPath.row]
         case 2:

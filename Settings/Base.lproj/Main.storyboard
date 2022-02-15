@@ -101,6 +101,46 @@
             </objects>
             <point key="canvasLocation" x="608.69565217391312" y="26.785714285714285"/>
         </scene>
+        <!--General-->
+        <scene sceneID="kDs-7V-p5K">
+            <objects>
+                <viewController storyboardIdentifier="GeneralScreen" title="General" id="i7N-gb-woe" customClass="GeneralScreen" customModule="Settings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e9m-6B-WiM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2K7-Ab-SdT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="generalCell" id="f2n-iv-yyJ">
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f2n-iv-yyJ" id="ty6-Dj-gye">
+                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bE8-K4-AfG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2K7-Ab-SdT" firstAttribute="leading" secondItem="e9m-6B-WiM" secondAttribute="leading" id="DGI-uX-VsS"/>
+                            <constraint firstAttribute="bottom" secondItem="2K7-Ab-SdT" secondAttribute="bottom" id="ZYj-Jh-ryR"/>
+                            <constraint firstItem="2K7-Ab-SdT" firstAttribute="top" secondItem="e9m-6B-WiM" secondAttribute="top" id="cKc-tg-fp0"/>
+                            <constraint firstAttribute="trailing" secondItem="2K7-Ab-SdT" secondAttribute="trailing" id="eIh-bg-bou"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="generalTableView" destination="2K7-Ab-SdT" id="Wws-ob-b2k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DjN-ru-8f8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250.7246376811595" y="26.785714285714285"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gmu-5R-hsi">
             <objects>
